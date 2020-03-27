@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FHXSmallMessageView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_message_small_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-k8-EZx">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="tr6-oc-Wpn">
+                    <rect key="frame" x="10" y="31" width="6" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="6" id="aof-Jp-5u2"/>
+                        <constraint firstAttribute="height" constant="6" id="ybT-Lk-iPp"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square_yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="UQS-qN-xBt">
+                    <rect key="frame" x="10" y="15" width="6" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="ZMC-Ac-3Pi"/>
+                        <constraint firstAttribute="width" constant="6" id="zNq-DZ-IBc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fi5-VS-ETQ">
+                    <rect key="frame" x="18" y="12" width="47" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zD0-RE-g6b">
+                    <rect key="frame" x="18" y="28" width="47" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zD0-RE-g6b" firstAttribute="leading" secondItem="tr6-oc-Wpn" secondAttribute="trailing" constant="2" id="13I-68-x3r"/>
+                <constraint firstItem="fi5-VS-ETQ" firstAttribute="centerY" secondItem="UQS-qN-xBt" secondAttribute="centerY" id="56O-7n-BTk"/>
+                <constraint firstItem="tr6-oc-Wpn" firstAttribute="top" secondItem="UQS-qN-xBt" secondAttribute="bottom" constant="10" id="7E1-zO-zsQ"/>
+                <constraint firstItem="fi5-VS-ETQ" firstAttribute="leading" secondItem="UQS-qN-xBt" secondAttribute="trailing" constant="2" id="B0k-9k-VTO"/>
+                <constraint firstItem="tr6-oc-Wpn" firstAttribute="leading" secondItem="UQS-qN-xBt" secondAttribute="leading" id="HZD-nk-yvr"/>
+                <constraint firstAttribute="trailing" secondItem="1O4-k8-EZx" secondAttribute="trailing" id="KeF-vb-TEp"/>
+                <constraint firstItem="1O4-k8-EZx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PJz-5F-Jaq"/>
+                <constraint firstItem="zD0-RE-g6b" firstAttribute="centerY" secondItem="tr6-oc-Wpn" secondAttribute="centerY" id="WQK-f1-WXM"/>
+                <constraint firstItem="1O4-k8-EZx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YXy-3f-2bh"/>
+                <constraint firstAttribute="trailing" secondItem="fi5-VS-ETQ" secondAttribute="trailing" constant="5" id="aXi-3Q-0I2"/>
+                <constraint firstItem="UQS-qN-xBt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="ecc-x2-uu5"/>
+                <constraint firstAttribute="trailing" secondItem="zD0-RE-g6b" secondAttribute="trailing" constant="5" id="qW0-aN-hi9"/>
+                <constraint firstAttribute="bottom" secondItem="1O4-k8-EZx" secondAttribute="bottom" id="umb-tU-yKA"/>
+                <constraint firstItem="UQS-qN-xBt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="wJp-pO-Uky"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImgView" destination="1O4-k8-EZx" id="u6B-aM-AFD"/>
+                <outlet property="distanceToTop" destination="ecc-x2-uu5" id="aZ2-98-0d6"/>
+                <outlet property="firstLabel" destination="fi5-VS-ETQ" id="vma-8h-xjz"/>
+                <outlet property="secondLabel" destination="zD0-RE-g6b" id="r5p-KD-nL1"/>
+            </connections>
+            <point key="canvasLocation" x="173.59999999999999" y="393.10344827586209"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_message_small_top.png" width="57" height="59"/>
+        <image name="square_blue.png" width="6" height="6"/>
+        <image name="square_yellow.png" width="6" height="6"/>
+    </resources>
+</document>

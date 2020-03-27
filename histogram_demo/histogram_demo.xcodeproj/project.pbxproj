@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0553D3313601722BCB54137A /* Pods_histogram_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F6A8EF9EA64A4FD39AF6C7 /* Pods_histogram_demoTests.framework */; };
+		14805688F625EF2EC6476FA7 /* Pods_histogram_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EB59BEA2C518DA6C5F6306 /* Pods_histogram_demo.framework */; };
+		B8010F09242C8CBE002C1D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F08242C8CBE002C1D6C /* AppDelegate.m */; };
+		B8010F0C242C8CBE002C1D6C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F0B242C8CBE002C1D6C /* SceneDelegate.m */; };
+		B8010F0F242C8CBE002C1D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F0E242C8CBE002C1D6C /* ViewController.m */; };
+		B8010F12242C8CBE002C1D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8010F10242C8CBE002C1D6C /* Main.storyboard */; };
+		B8010F14242C8CC1002C1D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8010F13242C8CC1002C1D6C /* Assets.xcassets */; };
+		B8010F17242C8CC1002C1D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8010F15242C8CC1002C1D6C /* LaunchScreen.storyboard */; };
+		B8010F1A242C8CC1002C1D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F19242C8CC1002C1D6C /* main.m */; };
+		B8010F24242C8CC1002C1D6C /* histogram_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F23242C8CC1002C1D6C /* histogram_demoTests.m */; };
+		B8010F2F242C8CC1002C1D6C /* histogram_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F2E242C8CC1002C1D6C /* histogram_demoUITests.m */; };
+		B8010F3F242C8F4F002C1D6C /* FHXOrderChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F3C242C8F4F002C1D6C /* FHXOrderChartCell.m */; };
+		B8010F40242C8F4F002C1D6C /* FHXOrderChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F3D242C8F4F002C1D6C /* FHXOrderChartCell.xib */; };
+		B8010F44242C8FD7002C1D6C /* FHXChartNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F41242C8FD7002C1D6C /* FHXChartNoDataView.m */; };
+		B8010F45242C8FD7002C1D6C /* FHXChartNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F42242C8FD7002C1D6C /* FHXChartNoDataView.xib */; };
+		B8010F48242C91E9002C1D6C /* icon_chart_nodata@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F46242C91E9002C1D6C /* icon_chart_nodata@3x.png */; };
+		B8010F49242C91E9002C1D6C /* icon_chart_nodata@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F47242C91E9002C1D6C /* icon_chart_nodata@2x.png */; };
+		B8010F4E242C92C6002C1D6C /* icon_down_jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F4C242C92C6002C1D6C /* icon_down_jiantou@2x.png */; };
+		B8010F4F242C92C6002C1D6C /* icon_down_jiantou@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F4D242C92C6002C1D6C /* icon_down_jiantou@3x.png */; };
+		B8010F52242C9356002C1D6C /* icon_biaoshi_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F50242C9356002C1D6C /* icon_biaoshi_yellow@2x.png */; };
+		B8010F53242C9356002C1D6C /* icon_biaoshi_yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F51242C9356002C1D6C /* icon_biaoshi_yellow@3x.png */; };
+		B8010F56242C9373002C1D6C /* icon_biaoshi_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F54242C9373002C1D6C /* icon_biaoshi_blue@2x.png */; };
+		B8010F57242C9373002C1D6C /* icon_biaoshi_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F55242C9373002C1D6C /* icon_biaoshi_blue@3x.png */; };
+		B8010F5B242C93D9002C1D6C /* FHXCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F59242C93D9002C1D6C /* FHXCollectionReusableView.xib */; };
+		B8010F5C242C93D9002C1D6C /* FHXCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F5A242C93D9002C1D6C /* FHXCollectionReusableView.m */; };
+		B8010F62242C94E2002C1D6C /* FHXOrderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F5F242C94E2002C1D6C /* FHXOrderCollectionCell.xib */; };
+		B8010F63242C94E2002C1D6C /* FHXOrderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F61242C94E2002C1D6C /* FHXOrderCollectionCell.m */; };
+		B8010F66242C9531002C1D6C /* FHXTrendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F64242C9531002C1D6C /* FHXTrendModel.m */; };
+		B8010F6A242C9592002C1D6C /* FHXSmallMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F67242C9591002C1D6C /* FHXSmallMessageView.xib */; };
+		B8010F6B242C9592002C1D6C /* FHXSmallMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F69242C9591002C1D6C /* FHXSmallMessageView.m */; };
+		B8010F6E242C95D6002C1D6C /* icon_message_small_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F6C242C95D6002C1D6C /* icon_message_small_top@2x.png */; };
+		B8010F6F242C95D6002C1D6C /* icon_message_small_top@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F6D242C95D6002C1D6C /* icon_message_small_top@3x.png */; };
+		B8010F72242C961A002C1D6C /* icon_message_small_bottom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F70242C961A002C1D6C /* icon_message_small_bottom@3x.png */; };
+		B8010F73242C961A002C1D6C /* icon_message_small_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F71242C961A002C1D6C /* icon_message_small_bottom@2x.png */; };
+		B8010F78242C968B002C1D6C /* square_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F74242C968A002C1D6C /* square_yellow@2x.png */; };
+		B8010F79242C968B002C1D6C /* square_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F75242C968A002C1D6C /* square_blue@2x.png */; };
+		B8010F7A242C968B002C1D6C /* square_yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F76242C968B002C1D6C /* square_yellow@3x.png */; };
+		B8010F7B242C968B002C1D6C /* square_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8010F77242C968B002C1D6C /* square_blue@3x.png */; };
+		B8010F83242C9CB5002C1D6C /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F81242C9CB5002C1D6C /* Helper.m */; };
+		B8010F88242CA51B002C1D6C /* HXCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8010F85242CA51B002C1D6C /* HXCollectionReusableView.xib */; };
+		B8010F89242CA51B002C1D6C /* HXCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8010F86242CA51B002C1D6C /* HXCollectionReusableView.m */; };
+		E5A0C446C52BC289A88642B2 /* Pods_histogram_demo_histogram_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC794F87C461170432080A /* Pods_histogram_demo_histogram_demoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8010F20242C8CC1002C1D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8010EFC242C8CBE002C1D6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8010F03242C8CBE002C1D6C;
+			remoteInfo = histogram_demo;
+		};
+		B8010F2B242C8CC1002C1D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8010EFC242C8CBE002C1D6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8010F03242C8CBE002C1D6C;
+			remoteInfo = histogram_demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0468447366C6845D77BCF13F /* Pods-histogram_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demoTests.release.xcconfig"; path = "Target Support Files/Pods-histogram_demoTests/Pods-histogram_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6394D4EC53C370C4D4D5FD16 /* Pods-histogram_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demo.debug.xcconfig"; path = "Target Support Files/Pods-histogram_demo/Pods-histogram_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		77F6A8EF9EA64A4FD39AF6C7 /* Pods_histogram_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_histogram_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B980ACF765C4D3BE66B0C98 /* Pods-histogram_demo-histogram_demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demo-histogram_demoUITests.release.xcconfig"; path = "Target Support Files/Pods-histogram_demo-histogram_demoUITests/Pods-histogram_demo-histogram_demoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A8EB59BEA2C518DA6C5F6306 /* Pods_histogram_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_histogram_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8010F04242C8CBE002C1D6C /* histogram_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = histogram_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8010F07242C8CBE002C1D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8010F08242C8CBE002C1D6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8010F0A242C8CBE002C1D6C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B8010F0B242C8CBE002C1D6C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B8010F0D242C8CBE002C1D6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B8010F0E242C8CBE002C1D6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8010F11242C8CBE002C1D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8010F13242C8CC1002C1D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8010F16242C8CC1002C1D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8010F18242C8CC1002C1D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8010F19242C8CC1002C1D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8010F1F242C8CC1002C1D6C /* histogram_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = histogram_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8010F23242C8CC1002C1D6C /* histogram_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = histogram_demoTests.m; sourceTree = "<group>"; };
+		B8010F25242C8CC1002C1D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8010F2A242C8CC1002C1D6C /* histogram_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = histogram_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8010F2E242C8CC1002C1D6C /* histogram_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = histogram_demoUITests.m; sourceTree = "<group>"; };
+		B8010F30242C8CC1002C1D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8010F3C242C8F4F002C1D6C /* FHXOrderChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXOrderChartCell.m; sourceTree = "<group>"; };
+		B8010F3D242C8F4F002C1D6C /* FHXOrderChartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHXOrderChartCell.xib; sourceTree = "<group>"; };
+		B8010F3E242C8F4F002C1D6C /* FHXOrderChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXOrderChartCell.h; sourceTree = "<group>"; };
+		B8010F41242C8FD7002C1D6C /* FHXChartNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXChartNoDataView.m; sourceTree = "<group>"; };
+		B8010F42242C8FD7002C1D6C /* FHXChartNoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHXChartNoDataView.xib; sourceTree = "<group>"; };
+		B8010F43242C8FD7002C1D6C /* FHXChartNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXChartNoDataView.h; sourceTree = "<group>"; };
+		B8010F46242C91E9002C1D6C /* icon_chart_nodata@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_chart_nodata@3x.png"; sourceTree = "<group>"; };
+		B8010F47242C91E9002C1D6C /* icon_chart_nodata@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_chart_nodata@2x.png"; sourceTree = "<group>"; };
+		B8010F4C242C92C6002C1D6C /* icon_down_jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_down_jiantou@2x.png"; sourceTree = "<group>"; };
+		B8010F4D242C92C6002C1D6C /* icon_down_jiantou@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_down_jiantou@3x.png"; sourceTree = "<group>"; };
+		B8010F50242C9356002C1D6C /* icon_biaoshi_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_biaoshi_yellow@2x.png"; sourceTree = "<group>"; };
+		B8010F51242C9356002C1D6C /* icon_biaoshi_yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_biaoshi_yellow@3x.png"; sourceTree = "<group>"; };
+		B8010F54242C9373002C1D6C /* icon_biaoshi_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_biaoshi_blue@2x.png"; sourceTree = "<group>"; };
+		B8010F55242C9373002C1D6C /* icon_biaoshi_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_biaoshi_blue@3x.png"; sourceTree = "<group>"; };
+		B8010F58242C93D9002C1D6C /* FHXCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXCollectionReusableView.h; sourceTree = "<group>"; };
+		B8010F59242C93D9002C1D6C /* FHXCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHXCollectionReusableView.xib; sourceTree = "<group>"; };
+		B8010F5A242C93D9002C1D6C /* FHXCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXCollectionReusableView.m; sourceTree = "<group>"; };
+		B8010F5F242C94E2002C1D6C /* FHXOrderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHXOrderCollectionCell.xib; sourceTree = "<group>"; };
+		B8010F60242C94E2002C1D6C /* FHXOrderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXOrderCollectionCell.h; sourceTree = "<group>"; };
+		B8010F61242C94E2002C1D6C /* FHXOrderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXOrderCollectionCell.m; sourceTree = "<group>"; };
+		B8010F64242C9531002C1D6C /* FHXTrendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXTrendModel.m; sourceTree = "<group>"; };
+		B8010F65242C9531002C1D6C /* FHXTrendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXTrendModel.h; sourceTree = "<group>"; };
+		B8010F67242C9591002C1D6C /* FHXSmallMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHXSmallMessageView.xib; sourceTree = "<group>"; };
+		B8010F68242C9591002C1D6C /* FHXSmallMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHXSmallMessageView.h; sourceTree = "<group>"; };
+		B8010F69242C9591002C1D6C /* FHXSmallMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHXSmallMessageView.m; sourceTree = "<group>"; };
+		B8010F6C242C95D6002C1D6C /* icon_message_small_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_small_top@2x.png"; sourceTree = "<group>"; };
+		B8010F6D242C95D6002C1D6C /* icon_message_small_top@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_small_top@3x.png"; sourceTree = "<group>"; };
+		B8010F70242C961A002C1D6C /* icon_message_small_bottom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_small_bottom@3x.png"; sourceTree = "<group>"; };
+		B8010F71242C961A002C1D6C /* icon_message_small_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_small_bottom@2x.png"; sourceTree = "<group>"; };
+		B8010F74242C968A002C1D6C /* square_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square_yellow@2x.png"; sourceTree = "<group>"; };
+		B8010F75242C968A002C1D6C /* square_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square_blue@2x.png"; sourceTree = "<group>"; };
+		B8010F76242C968B002C1D6C /* square_yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square_yellow@3x.png"; sourceTree = "<group>"; };
+		B8010F77242C968B002C1D6C /* square_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square_blue@3x.png"; sourceTree = "<group>"; };
+		B8010F81242C9CB5002C1D6C /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		B8010F82242C9CB5002C1D6C /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		B8010F84242C9D9D002C1D6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B8010F85242CA51B002C1D6C /* HXCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXCollectionReusableView.xib; sourceTree = "<group>"; };
+		B8010F86242CA51B002C1D6C /* HXCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCollectionReusableView.m; sourceTree = "<group>"; };
+		B8010F87242CA51B002C1D6C /* HXCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCollectionReusableView.h; sourceTree = "<group>"; };
+		E163FE3E453E850426C0DF20 /* Pods-histogram_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-histogram_demoTests/Pods-histogram_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E19ABACB841087C32820850A /* Pods-histogram_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demo.release.xcconfig"; path = "Target Support Files/Pods-histogram_demo/Pods-histogram_demo.release.xcconfig"; sourceTree = "<group>"; };
+		F6E69B30E1F1B0E11BE7E87D /* Pods-histogram_demo-histogram_demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogram_demo-histogram_demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-histogram_demo-histogram_demoUITests/Pods-histogram_demo-histogram_demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EC794F87C461170432080A /* Pods_histogram_demo_histogram_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_histogram_demo_histogram_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8010F01242C8CBE002C1D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14805688F625EF2EC6476FA7 /* Pods_histogram_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F1C242C8CC1002C1D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0553D3313601722BCB54137A /* Pods_histogram_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F27242C8CC1002C1D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A0C446C52BC289A88642B2 /* Pods_histogram_demo_histogram_demoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FF590DECA246C0577D28734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB59BEA2C518DA6C5F6306 /* Pods_histogram_demo.framework */,
+				F8EC794F87C461170432080A /* Pods_histogram_demo_histogram_demoUITests.framework */,
+				77F6A8EF9EA64A4FD39AF6C7 /* Pods_histogram_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		542712A22E3EC9CFED88EECC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6394D4EC53C370C4D4D5FD16 /* Pods-histogram_demo.debug.xcconfig */,
+				E19ABACB841087C32820850A /* Pods-histogram_demo.release.xcconfig */,
+				F6E69B30E1F1B0E11BE7E87D /* Pods-histogram_demo-histogram_demoUITests.debug.xcconfig */,
+				9B980ACF765C4D3BE66B0C98 /* Pods-histogram_demo-histogram_demoUITests.release.xcconfig */,
+				E163FE3E453E850426C0DF20 /* Pods-histogram_demoTests.debug.xcconfig */,
+				0468447366C6845D77BCF13F /* Pods-histogram_demoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8010EFB242C8CBE002C1D6C = {
+			isa = PBXGroup;
+			children = (
+				B8010F06242C8CBE002C1D6C /* histogram_demo */,
+				B8010F22242C8CC1002C1D6C /* histogram_demoTests */,
+				B8010F2D242C8CC1002C1D6C /* histogram_demoUITests */,
+				B8010F05242C8CBE002C1D6C /* Products */,
+				542712A22E3EC9CFED88EECC /* Pods */,
+				0FF590DECA246C0577D28734 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8010F05242C8CBE002C1D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F04242C8CBE002C1D6C /* histogram_demo.app */,
+				B8010F1F242C8CC1002C1D6C /* histogram_demoTests.xctest */,
+				B8010F2A242C8CC1002C1D6C /* histogram_demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8010F06242C8CBE002C1D6C /* histogram_demo */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F07242C8CBE002C1D6C /* AppDelegate.h */,
+				B8010F08242C8CBE002C1D6C /* AppDelegate.m */,
+				B8010F0A242C8CBE002C1D6C /* SceneDelegate.h */,
+				B8010F0B242C8CBE002C1D6C /* SceneDelegate.m */,
+				B8010F0D242C8CBE002C1D6C /* ViewController.h */,
+				B8010F0E242C8CBE002C1D6C /* ViewController.m */,
+				B8010F84242C9D9D002C1D6C /* PrefixHeader.pch */,
+				B8010F5E242C9412002C1D6C /* model */,
+				B8010F4B242C9227002C1D6C /* views */,
+				B8010F4A242C920A002C1D6C /* images */,
+				B8010F80242C9CA1002C1D6C /* tools */,
+				B8010F10242C8CBE002C1D6C /* Main.storyboard */,
+				B8010F13242C8CC1002C1D6C /* Assets.xcassets */,
+				B8010F15242C8CC1002C1D6C /* LaunchScreen.storyboard */,
+				B8010F18242C8CC1002C1D6C /* Info.plist */,
+				B8010F19242C8CC1002C1D6C /* main.m */,
+			);
+			path = histogram_demo;
+			sourceTree = "<group>";
+		};
+		B8010F22242C8CC1002C1D6C /* histogram_demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F23242C8CC1002C1D6C /* histogram_demoTests.m */,
+				B8010F25242C8CC1002C1D6C /* Info.plist */,
+			);
+			path = histogram_demoTests;
+			sourceTree = "<group>";
+		};
+		B8010F2D242C8CC1002C1D6C /* histogram_demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F2E242C8CC1002C1D6C /* histogram_demoUITests.m */,
+				B8010F30242C8CC1002C1D6C /* Info.plist */,
+			);
+			path = histogram_demoUITests;
+			sourceTree = "<group>";
+		};
+		B8010F4A242C920A002C1D6C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F75242C968A002C1D6C /* square_blue@2x.png */,
+				B8010F77242C968B002C1D6C /* square_blue@3x.png */,
+				B8010F74242C968A002C1D6C /* square_yellow@2x.png */,
+				B8010F76242C968B002C1D6C /* square_yellow@3x.png */,
+				B8010F71242C961A002C1D6C /* icon_message_small_bottom@2x.png */,
+				B8010F70242C961A002C1D6C /* icon_message_small_bottom@3x.png */,
+				B8010F6C242C95D6002C1D6C /* icon_message_small_top@2x.png */,
+				B8010F6D242C95D6002C1D6C /* icon_message_small_top@3x.png */,
+				B8010F54242C9373002C1D6C /* icon_biaoshi_blue@2x.png */,
+				B8010F55242C9373002C1D6C /* icon_biaoshi_blue@3x.png */,
+				B8010F50242C9356002C1D6C /* icon_biaoshi_yellow@2x.png */,
+				B8010F51242C9356002C1D6C /* icon_biaoshi_yellow@3x.png */,
+				B8010F4C242C92C6002C1D6C /* icon_down_jiantou@2x.png */,
+				B8010F4D242C92C6002C1D6C /* icon_down_jiantou@3x.png */,
+				B8010F47242C91E9002C1D6C /* icon_chart_nodata@2x.png */,
+				B8010F46242C91E9002C1D6C /* icon_chart_nodata@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B8010F4B242C9227002C1D6C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F3E242C8F4F002C1D6C /* FHXOrderChartCell.h */,
+				B8010F3C242C8F4F002C1D6C /* FHXOrderChartCell.m */,
+				B8010F3D242C8F4F002C1D6C /* FHXOrderChartCell.xib */,
+				B8010F43242C8FD7002C1D6C /* FHXChartNoDataView.h */,
+				B8010F41242C8FD7002C1D6C /* FHXChartNoDataView.m */,
+				B8010F42242C8FD7002C1D6C /* FHXChartNoDataView.xib */,
+				B8010F60242C94E2002C1D6C /* FHXOrderCollectionCell.h */,
+				B8010F61242C94E2002C1D6C /* FHXOrderCollectionCell.m */,
+				B8010F5F242C94E2002C1D6C /* FHXOrderCollectionCell.xib */,
+				B8010F58242C93D9002C1D6C /* FHXCollectionReusableView.h */,
+				B8010F5A242C93D9002C1D6C /* FHXCollectionReusableView.m */,
+				B8010F59242C93D9002C1D6C /* FHXCollectionReusableView.xib */,
+				B8010F87242CA51B002C1D6C /* HXCollectionReusableView.h */,
+				B8010F86242CA51B002C1D6C /* HXCollectionReusableView.m */,
+				B8010F85242CA51B002C1D6C /* HXCollectionReusableView.xib */,
+				B8010F68242C9591002C1D6C /* FHXSmallMessageView.h */,
+				B8010F69242C9591002C1D6C /* FHXSmallMessageView.m */,
+				B8010F67242C9591002C1D6C /* FHXSmallMessageView.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B8010F5E242C9412002C1D6C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F65242C9531002C1D6C /* FHXTrendModel.h */,
+				B8010F64242C9531002C1D6C /* FHXTrendModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B8010F80242C9CA1002C1D6C /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				B8010F82242C9CB5002C1D6C /* Helper.h */,
+				B8010F81242C9CB5002C1D6C /* Helper.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8010F03242C8CBE002C1D6C /* histogram_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8010F33242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demo" */;
+			buildPhases = (
+				96E7223B49EA829A8BD80A52 /* [CP] Check Pods Manifest.lock */,
+				B8010F00242C8CBE002C1D6C /* Sources */,
+				B8010F01242C8CBE002C1D6C /* Frameworks */,
+				B8010F02242C8CBE002C1D6C /* Resources */,
+				927ACB15C955653E305203D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = histogram_demo;
+			productName = histogram_demo;
+			productReference = B8010F04242C8CBE002C1D6C /* histogram_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8010F1E242C8CC1002C1D6C /* histogram_demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8010F36242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demoTests" */;
+			buildPhases = (
+				5512964D7527957D2C1FBF0A /* [CP] Check Pods Manifest.lock */,
+				B8010F1B242C8CC1002C1D6C /* Sources */,
+				B8010F1C242C8CC1002C1D6C /* Frameworks */,
+				B8010F1D242C8CC1002C1D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8010F21242C8CC1002C1D6C /* PBXTargetDependency */,
+			);
+			name = histogram_demoTests;
+			productName = histogram_demoTests;
+			productReference = B8010F1F242C8CC1002C1D6C /* histogram_demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8010F29242C8CC1002C1D6C /* histogram_demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8010F39242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demoUITests" */;
+			buildPhases = (
+				BCDA334C06423CE083BF41E1 /* [CP] Check Pods Manifest.lock */,
+				B8010F26242C8CC1002C1D6C /* Sources */,
+				B8010F27242C8CC1002C1D6C /* Frameworks */,
+				B8010F28242C8CC1002C1D6C /* Resources */,
+				3C0CF6987EF1392247FF4853 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8010F2C242C8CC1002C1D6C /* PBXTargetDependency */,
+			);
+			name = histogram_demoUITests;
+			productName = histogram_demoUITests;
+			productReference = B8010F2A242C8CC1002C1D6C /* histogram_demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8010EFC242C8CBE002C1D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = xjc;
+				TargetAttributes = {
+					B8010F03242C8CBE002C1D6C = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					B8010F1E242C8CC1002C1D6C = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = B8010F03242C8CBE002C1D6C;
+					};
+					B8010F29242C8CC1002C1D6C = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = B8010F03242C8CBE002C1D6C;
+					};
+				};
+			};
+			buildConfigurationList = B8010EFF242C8CBE002C1D6C /* Build configuration list for PBXProject "histogram_demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8010EFB242C8CBE002C1D6C;
+			productRefGroup = B8010F05242C8CBE002C1D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8010F03242C8CBE002C1D6C /* histogram_demo */,
+				B8010F1E242C8CC1002C1D6C /* histogram_demoTests */,
+				B8010F29242C8CC1002C1D6C /* histogram_demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8010F02242C8CBE002C1D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8010F73242C961A002C1D6C /* icon_message_small_bottom@2x.png in Resources */,
+				B8010F79242C968B002C1D6C /* square_blue@2x.png in Resources */,
+				B8010F72242C961A002C1D6C /* icon_message_small_bottom@3x.png in Resources */,
+				B8010F17242C8CC1002C1D6C /* LaunchScreen.storyboard in Resources */,
+				B8010F52242C9356002C1D6C /* icon_biaoshi_yellow@2x.png in Resources */,
+				B8010F14242C8CC1002C1D6C /* Assets.xcassets in Resources */,
+				B8010F56242C9373002C1D6C /* icon_biaoshi_blue@2x.png in Resources */,
+				B8010F40242C8F4F002C1D6C /* FHXOrderChartCell.xib in Resources */,
+				B8010F7B242C968B002C1D6C /* square_blue@3x.png in Resources */,
+				B8010F57242C9373002C1D6C /* icon_biaoshi_blue@3x.png in Resources */,
+				B8010F5B242C93D9002C1D6C /* FHXCollectionReusableView.xib in Resources */,
+				B8010F6A242C9592002C1D6C /* FHXSmallMessageView.xib in Resources */,
+				B8010F6E242C95D6002C1D6C /* icon_message_small_top@2x.png in Resources */,
+				B8010F45242C8FD7002C1D6C /* FHXChartNoDataView.xib in Resources */,
+				B8010F53242C9356002C1D6C /* icon_biaoshi_yellow@3x.png in Resources */,
+				B8010F78242C968B002C1D6C /* square_yellow@2x.png in Resources */,
+				B8010F48242C91E9002C1D6C /* icon_chart_nodata@3x.png in Resources */,
+				B8010F12242C8CBE002C1D6C /* Main.storyboard in Resources */,
+				B8010F4E242C92C6002C1D6C /* icon_down_jiantou@2x.png in Resources */,
+				B8010F7A242C968B002C1D6C /* square_yellow@3x.png in Resources */,
+				B8010F6F242C95D6002C1D6C /* icon_message_small_top@3x.png in Resources */,
+				B8010F4F242C92C6002C1D6C /* icon_down_jiantou@3x.png in Resources */,
+				B8010F62242C94E2002C1D6C /* FHXOrderCollectionCell.xib in Resources */,
+				B8010F49242C91E9002C1D6C /* icon_chart_nodata@2x.png in Resources */,
+				B8010F88242CA51B002C1D6C /* HXCollectionReusableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F1D242C8CC1002C1D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F28242C8CC1002C1D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0CF6987EF1392247FF4853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-histogram_demo-histogram_demoUITests/Pods-histogram_demo-histogram_demoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-histogram_demo-histogram_demoUITests/Pods-histogram_demo-histogram_demoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-histogram_demo-histogram_demoUITests/Pods-histogram_demo-histogram_demoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5512964D7527957D2C1FBF0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-histogram_demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		927ACB15C955653E305203D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-histogram_demo/Pods-histogram_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-histogram_demo/Pods-histogram_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-histogram_demo/Pods-histogram_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E7223B49EA829A8BD80A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-histogram_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCDA334C06423CE083BF41E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-histogram_demo-histogram_demoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8010F00242C8CBE002C1D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8010F0F242C8CBE002C1D6C /* ViewController.m in Sources */,
+				B8010F63242C94E2002C1D6C /* FHXOrderCollectionCell.m in Sources */,
+				B8010F09242C8CBE002C1D6C /* AppDelegate.m in Sources */,
+				B8010F5C242C93D9002C1D6C /* FHXCollectionReusableView.m in Sources */,
+				B8010F3F242C8F4F002C1D6C /* FHXOrderChartCell.m in Sources */,
+				B8010F1A242C8CC1002C1D6C /* main.m in Sources */,
+				B8010F0C242C8CBE002C1D6C /* SceneDelegate.m in Sources */,
+				B8010F83242C9CB5002C1D6C /* Helper.m in Sources */,
+				B8010F6B242C9592002C1D6C /* FHXSmallMessageView.m in Sources */,
+				B8010F44242C8FD7002C1D6C /* FHXChartNoDataView.m in Sources */,
+				B8010F89242CA51B002C1D6C /* HXCollectionReusableView.m in Sources */,
+				B8010F66242C9531002C1D6C /* FHXTrendModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F1B242C8CC1002C1D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8010F24242C8CC1002C1D6C /* histogram_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8010F26242C8CC1002C1D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8010F2F242C8CC1002C1D6C /* histogram_demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8010F21242C8CC1002C1D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8010F03242C8CBE002C1D6C /* histogram_demo */;
+			targetProxy = B8010F20242C8CC1002C1D6C /* PBXContainerItemProxy */;
+		};
+		B8010F2C242C8CC1002C1D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8010F03242C8CBE002C1D6C /* histogram_demo */;
+			targetProxy = B8010F2B242C8CC1002C1D6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8010F10242C8CBE002C1D6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8010F11242C8CBE002C1D6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8010F15242C8CC1002C1D6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8010F16242C8CC1002C1D6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8010F31242C8CC1002C1D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8010F32242C8CC1002C1D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8010F34242C8CC1002C1D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6394D4EC53C370C4D4D5FD16 /* Pods-histogram_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/histogram_demo/PrefixHeader.pch";
+				INFOPLIST_FILE = histogram_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8010F35242C8CC1002C1D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19ABACB841087C32820850A /* Pods-histogram_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/histogram_demo/PrefixHeader.pch";
+				INFOPLIST_FILE = histogram_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8010F37242C8CC1002C1D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E163FE3E453E850426C0DF20 /* Pods-histogram_demoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = histogram_demoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/histogram_demo.app/histogram_demo";
+			};
+			name = Debug;
+		};
+		B8010F38242C8CC1002C1D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0468447366C6845D77BCF13F /* Pods-histogram_demoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = histogram_demoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/histogram_demo.app/histogram_demo";
+			};
+			name = Release;
+		};
+		B8010F3A242C8CC1002C1D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E69B30E1F1B0E11BE7E87D /* Pods-histogram_demo-histogram_demoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = histogram_demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = histogram_demo;
+			};
+			name = Debug;
+		};
+		B8010F3B242C8CC1002C1D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B980ACF765C4D3BE66B0C98 /* Pods-histogram_demo-histogram_demoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = histogram_demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xjc.histogram-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = histogram_demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8010EFF242C8CBE002C1D6C /* Build configuration list for PBXProject "histogram_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8010F31242C8CC1002C1D6C /* Debug */,
+				B8010F32242C8CC1002C1D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8010F33242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8010F34242C8CC1002C1D6C /* Debug */,
+				B8010F35242C8CC1002C1D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8010F36242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8010F37242C8CC1002C1D6C /* Debug */,
+				B8010F38242C8CC1002C1D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8010F39242C8CC1002C1D6C /* Build configuration list for PBXNativeTarget "histogram_demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8010F3A242C8CC1002C1D6C /* Debug */,
+				B8010F3B242C8CC1002C1D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8010EFC242C8CBE002C1D6C /* Project object */;
+}
